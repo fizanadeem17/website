@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+ .main{
+    display: flex;
+    align-items: center;
+ }
+ .left{
+    width: 50%;
+    margin-left: 70px;
+ }  
+ .right{
+    width: 50%;
+    margin-left: 200px;
+    margin-top: 30px;
+ }     
+span{
+    color: #6b13d8;;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+   
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(3, 3, 63);
+}
+button{
+    padding: 20px 48px;
+    border-radius: 10px;
+    border:  rgb(13, 13, 77);
+    background-color: rgb(13, 13, 77);
+    color: white;
+    font-size: 17px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    
+}
+.bottom{
+    width: 100%;
+    height: 700px;
+    background-color:rgb(13, 13, 77);
+}
+.main{
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;  
+  animation-fill-mode: forwards;
+  height: 600px;
+}
+@keyframes example {
+  from {bottom: 0px;}
+  to {bottom: 30px;}
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+#p1{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    top: 90px;
+} 
+.inner{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 130px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 85px;
+
+} 
+.inner div{
+    margin: 15px;
+    padding: 30px;
+    width: 22%;
+    height: 220px;
+    border: 1px solid #96919b;
+    border-radius: 10px;
+    text-align: center;
+}
+#p2{
+   
+    font-size: 30px;
+}
+#h3{
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+.inner :hover{
+    background-color: white;
+    color: black;
+}
+.bottom{
+  position: relative;
+  animation-name: exa;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;
+  height: 600px;
+}
+@keyframes exa{
+  from {bottom: 0px;}
+  to {bottom: 30px; }
+}
+@media screen and (max-width: 600px){
+    .main{
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+    .right{
+    width: 100%;
+    margin-right: 32px;
+   }
+   .left{
+    width: 100%;
+}
+h1{
+    font-size: 45px;  
+}
+   .bottom{
+    width: 118%;
+    height: 1200px;
+   } 
+   .inner div{
+    width: 60%;
+   }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1> <span>Learn</span> new skills <br> when and where you like.</h1>
+             <p>Use the list below to bring attention to your product’s key
+                differentiator.</p>
+                <p><i class="fa-solid fa-circle-check" style="color: #6b13d8;"></i>&nbsp;&nbsp; Hand-picked authors</p>
+                <p><i class="fa-solid fa-circle-check" style="color: #6b13d8;"></i>&nbsp;&nbsp;Easy to follow curriculum</p>
+                <p><i class="fa-solid fa-circle-check" style="color: #6b13d8;"></i>&nbsp;&nbsp;Free courses</p>
+                <p><i class="fa-solid fa-circle-check" style="color: #6b13d8;"></i>&nbsp;&nbsp;Money-back guarantee</p> <br>
+                <button>Join Free</button>
+        </div>
+        <div class="right">
+            <img src="https://i.pinimg.com/564x/ec/11/60/ec1160499f33d7e7170b8eb68b64dd4b.jpg" alt="" width="300" >
+        </div> 
+    </div> <br>
+    <div class="bottom">
+        <h2 >Why learn with our courses?</h2>
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur.</p>
+        <div class="inner">
+            <div><p id="p2"><i class="fa-solid fa-book-open-reader" style="color: #39ff14;"></i></p>
+            <h3>01. Learn</h3>
+           Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.
+            </div>
+         <div>
+            <p id="p2"><i class="fa-solid fa-graduation-cap" style="color: #39ff14;"></i></p>
+            <h3>02. Graduate</h3>
+            Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.
+         </div>
+         <div>
+            <p id="p2"><i class="fa-solid fa-house-laptop" style="color: #39ff14;"></i></p>
+            <h3>03. Work</h3>
+            Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.
+         </div>
+        </div>
+    </div>
+    
+</body>
+</html
